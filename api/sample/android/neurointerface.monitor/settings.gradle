@@ -1,0 +1,4 @@
+//include ':neurointerface.monitor', ':neurointerface.core'
+//project(":neurointerface.core").projectDir = file("../../../core/android/neurointerface.core")
+
+include ':neurointerface.monitor'
