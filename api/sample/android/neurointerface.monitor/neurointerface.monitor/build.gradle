@@ -4,17 +4,17 @@ repositories {
     mavenCentral()
     flatDir {
         dirs '../../../../core/android/neurointerface.core/build/outputs/aar'
-        //dirs 'libs'
     }
+    google()
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
     defaultConfig {
         applicationId "org.mtbo.neurointerfacemonitor"
         minSdkVersion 21
-        targetSdkVersion 21
+        targetSdkVersion 27
         versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
         project.ext.set("archivesBaseName", "neurointerface.monitor");
@@ -42,13 +42,13 @@ dependencies {
     compile 'org.mtbo.neurointerfacecore:neurointerface.core-release@aar'
     //compile project(':neurointerface.core')
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:27.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:design:27.0.0'
     compile 'com.jakewharton:butterknife:8.7.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
-    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.google.code.gson:gson:2.8.1'
 }
 
 
